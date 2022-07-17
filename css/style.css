@@ -1,14 +1,14 @@
 /* FONTS */
 
-@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+@import url("https://fonts.googleapis.com/css?family=VT323");
 /* GLOBAL STYLES */
 
 :root {
-  --font-primary: 'Poppins', sans-serif;
-  --font-secondary: 'Arvo', serif;
-  --font-code: 'Roboto', monospace;
-  --bg-color: #00163f;
+  --font-primary: 'Press Start 2P';
+  --font-secondary: 'VT323';
+  --bg-image: url(img/3187.jpg);
+  --bg-color: #28003f;
   --font-color: #ffffff;
   --btn-bg-color: #ffffff;
   --accent-color: #be7efe;
@@ -22,6 +22,7 @@
 }
 
 body {
+  background: var(--bg-image);
   background-color: var(--bg-color);
   display: flex;
   flex-flow: column;
@@ -50,6 +51,48 @@ header .container {
   align-items: center;
 }
 
+/* The Modal (background) */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 200px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+
+.modal-content {
+  background-color: #00000000;
+  margin: auto;
+  padding: 0;
+  border: 0px solid #888;
+  width: 625px;
+}
+
+/* The Close Button */
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(145, 17, 17);
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .menu {
   display: flex;
   gap: 2rem;
@@ -73,6 +116,7 @@ header .container {
   cursor: pointer;
   position: relative;
   text-decoration: none;
+  border: none;
   outline: none;
 }
 .btn:hover {
