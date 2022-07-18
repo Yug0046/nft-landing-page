@@ -7,7 +7,7 @@
 :root {
   --font-primary: 'Press Start 2P';
   --font-secondary: 'VT323';
-  --bg-image: url(img/3187.jpg);
+  --bg-image: url(img/site_bg.png);
   --bg-color: #28003f;
   --font-color: #ffffff;
   --btn-bg-color: #ffffff;
@@ -34,16 +34,12 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 960px;
+  max-width: 1700px;
   margin: 0 auto;
   padding: 1rem 2rem;
 }
 
 /* HEADER */
-
-header {
-  box-shadow: var(--header-shadow);
-}
 
 header .container {
   flex-direction: row;
