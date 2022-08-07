@@ -124,8 +124,11 @@ header .container {
 
 .wallet-btn {
   border-radius: 5rem;
-  margin-left: 2rem;
+  margin-left: -2rem;
+  font-size: 1.5rem;
+  padding: 0.2rem 1rem;
   border-color: transparent;
+  box-shadow: 4px 4px 0 0 #000;
 }
 
 .hero-btn {
@@ -136,6 +139,17 @@ header .container {
   text-shadow: 0 0 5px #000000;
   padding: 0.5rem 2rem;
 }
+
+input[type=text], select {
+  width: 38.2%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(233, 207, 231);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
 
 /* COUNTDOWN SECTION */
 

@@ -21,7 +21,12 @@
             <img src="images/x-icon/favicon-32x32.png" alt="logo" />
           </a>
         </div>
-        <div class="menu">         
+        <div class="menu">     
+          
+      <!-- Whitelist checker -->
+      <input type="text" id="walletAdd"><br>
+      <button id="checkbtn" class="wallet-btn btn">CHECK</button>
+          
           <a
           href="https://etherscan.io"
           target="_blank"
@@ -53,7 +58,7 @@
         <ul
           id="countdown"
           class="count-down"
-          data-date="July XX, 2022 4:00:00 PM UTC"
+          data-date="August 08, 2022 4:00:00 PM UTC"
         >
           <li class="clock-item">
             <span class="count-number days">20</span>
@@ -78,8 +83,9 @@
         <h1 style="font-size:100px">Magical Beings are coming soon!</h1>
                
         <p style="font-size:30px">Magic is being brewed..</p>
+
  
-              <!-- Trigger/Open The Modal -->
+      <!-- Trigger/Open The Modal -->
       <button id="myBtn" class="hero-btn btn" disabled>MINT</button>
       
       <!-- The Modal -->
@@ -90,7 +96,7 @@
           <span class="close">&times;</span>
           <p>
             <iframe
-                src="https://gateway.ipfscdn.io/ipfs/QmZ3UzARChNBBVdqcbibQ63nvtePkRfnyieb89sXTRMLxE/signature-drop.html?contract=0xd13Ab087C312b82A047922C54fC245CAc4c4aa53&chainId=4&theme=dark&primaryColor=purple&secondaryColor=purple"
+                src="https://gateway.ipfscdn.io/ipfs/QmUfp6thZQTmNKS6tzijJpxdoBe9X7spHwzRjUh3RPTAwF/signature-drop.html?contract=0x4635FE744D139eeDa2d13E95cF4197aaa6E18910&chainId=1&rpcUrl=https%3A%2F%2Feth-mainnet.g.alchemy.com%2Fv2%2FzVMYpAJcSeMsoFrkdjdUzTbI1hVY2u6t&theme=system&primaryColor=purple&secondaryColor=green"
                 width="600px"
                 height="600px"
                 style="max-width:100%;"
@@ -103,5 +109,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@metamask/onboarding@1.0.1/dist/metamask-onboarding.bundle.js"></script>
     <script src="js/countdown.js"></script>
     <script src="js/modal.js"></script>
+    <script type="module" src="js/checkwhitlelist.js"></script>
   </body>
 </html>
